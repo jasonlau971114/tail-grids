@@ -17,17 +17,12 @@ export function ContainerWithGrid({
   return (
     <div
       className={cn(
-        "relative w-full dark:bg-gray-950 dark:[--pattern-fg:var(--border-2)] bg-white [--pattern-fg:var(--border-1)]",
+        "relative w-full overflow-hidden dark:bg-gray-950 dark:[--pattern-fg:var(--border-2)] bg-white [--pattern-fg:var(--border-1)]",
         rootClassName
       )}
     >
       {/* main content */}
-      <div
-        className={cn(
-          "relative w-full px-6 md:px-12 lg:px-16",
-          contentClassName
-        )}
-      >
+      <div className={cn("relative w-full px-6 lg:px-10", contentClassName)}>
         {children}
       </div>
 
