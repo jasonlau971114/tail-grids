@@ -4,6 +4,7 @@
    ============================================ */
 
 [data-theme="dark"] {
+  /* Primary */
   --theme-primary-50: #eff3ff;
   --theme-primary-100: #dae2ff;
   --theme-primary-200: #becdff;
@@ -16,15 +17,117 @@
   --theme-primary-900: #1c228c;
   --theme-primary-950: #161755;
 
+  --theme-primary-text: white;
   --theme-neutral-brand-color: #7592ff;
 
-  --theme-primary-text: white;
+  /* Text Color */
+  --theme-title-50: #ffffffcc;
+  --theme-text-50: #9ca3af;
+  --theme-text-100: #9ca3af;
+  --theme-text-200: #6b7280;
+  --theme-text-300: #e5e7eb;
+
+  /* White */
+  --theme-white-100: #ffffff;
+  --theme-white-90: #ffffffcc;
+  --theme-white-80: #ffffffcc;
+  --theme-white-70: #ffffffb3;
+  --theme-white-60: #ffffff99;
 
   /* Context Color */
   --theme-error-500: #ef4444;
   --theme-success-500: #22c55e;
   --theme-warning-500: #eab308;
   --theme-info-500: #0ea5e9;
+
+  /* Border Color */
+  --theme-border-color-base-50: #1f2937;
+  --theme-border-color-base-100: #111827;
+  --theme-border-color-base-200: #374151;
+  --theme-border-color-base-300: #1f2937;
+
+  /* foreground Color */
+  --theme-foreground-50: #ffffff;
+  --theme-foreground-100: #ffffff;
+  --theme-foreground-soft-50: #f9fafb;
+  --theme-foreground-soft-100: #f3f4f6;
+  --theme-foreground-soft-200: #f3f4f6;
+  --theme-foreground-soft-300: #f3f4f6;
+  --theme-foreground-soft-400: #e5e7eb;
+  --theme-foreground-soft-500: #d1d5db;
+
+  /* Background Color */
+  --theme-background-50: #030712;
+  --theme-background-100: #111827;
+  --theme-background-soft-50: #111827;
+  --theme-background-soft-100: #111827;
+  --theme-background-soft-200: #1f2937;
+  --theme-background-soft-300: #030712;
+  --theme-background-soft-400: #1f2937;
+  --theme-background-soft-500: #374151;
+
+  --theme-background-success-600: #16a34a;
+
+  /* ======== Button Color For Dark =========*/
+
+  /* Button Primary Color */
+  --theme-button-primary-background: #3758f9;
+  --theme-button-primary-hover-background: #2237ee;
+  --theme-button-primary-text: #ffffff;
+  --theme-button-primary-focus-ring: rgba(55, 88, 249, 0.2);
+
+  /* Outline Dark */
+  --theme-button-outline-background: #111827;
+  --theme-button-outline-hover-background: #111827;
+  --theme-button-outline-border: #1f2937;
+  --theme-button-outline-focus-ring: rgba(152, 162, 179, 0.14);
+  --theme-button-outline-text: #e5e7eb;
+  --theme-button-outline-hover-text: #f3f4f6;
+  --theme-button-outline-disabled-background: #1f2937;
+  --theme-button-outline-disabled-text: #4b5563;
+  --theme-button-outline-disabled-border: #1f2937;
+
+  /* Disabled */
+  --theme-button-disabled-background: #1f2937;
+  --theme-button-disabled-border: #1f2937;
+  --theme-button-disabled-text: #4b5563;
+
+  /* Error */
+  --theme-button-error-background: #dc2626;
+  --theme-button-error-hover-background: #b91c1c;
+  --theme-button-error-border: #ef4444;
+  --theme-button-error-text: #ffffff;
+  --theme-button-error-focus-ring: rgba(220, 38, 38, 0.2);
+
+  /* Error Outline Dark */
+  --theme-button-error-outline-background: #ef44440d;
+  --theme-button-error-outline-border: #7f1d1d;
+  --theme-button-error-outline-focus-border: #991b1b;
+  --theme-button-error-outline-hover-background: #ef444426;
+  --theme-button-error-outline-text: #ef4444;
+  --theme-button-error-outline-hover-text: #f87171;
+  --theme-button-error-outline-focus-ring: rgba(220, 38, 38, 0.2);
+
+  /* Success */
+  --theme-button-success-background: #16a34a;
+  --theme-button-success-border: #22c55e;
+  --theme-button-success-hover-background: #15803d;
+  --theme-button-success-text: #ffffff;
+  --theme-button-success-focus-ring: rgba(22, 163, 74, 0.2);
+
+  /* Success Outline Dark */
+  --theme-button-success-outline-background: #22c55e0d;
+  --theme-button-success-outline-border: #14532d;
+  --theme-button-success-outline-focus-border: #166534;
+  --theme-button-success-outline-hover-background: #22c55e26;
+  --theme-button-success-outline-text: #22c55e;
+  --theme-button-success-outline-hover-text: #4ade80;
+  --theme-button-success-outline-focus-ring: rgba(22, 163, 74, 0.2);
+
+  /* Ghost */
+  --theme-button-ghost-text: #6b7280;
+  --theme-button-ghost-hover-text: #d1d5db;
+  --theme-button-ghost-hover-background: #111827;
 
   /* Button Group Primary */
   --theme-button-group-primary-background: #ffffff00;
@@ -39,13 +142,13 @@
   /* ======== Badge Color For Dark =========*/
 
   /* Badge Neutral */
-  --theme-badge-neutral-background: #6b728026;
-  --theme-badge-neutral-text: #6b7280;
-  --theme-badge-neutral-icon-color: #9ca3af;
+  --theme-badge-neutral-background: #4b5563;
+  --theme-badge-neutral-text: #e5e7eb;
+  --theme-badge-neutral-icon-color: #e5e7eb;
 
   /* Badge Primary */
   --theme-badge-primary-background: #3758f926;
-  --theme-badge-primary-text: #3758f9;
+  --theme-badge-primary-text: #5e84fc;
   --theme-badge-primary-icon-color: #5e84fc;
 
   /* Badge Error */
@@ -215,7 +318,7 @@
   /* ======== Datepicker Color For Dark =========*/
   --theme-datepicker-background: #1f2937;
   --theme-datepicker-selected-background: #3758f9;
-  --theme-datepicker-selected-hover-background: #f9fafb;
+  --theme-datepicker-selected-hover-background: #ffffff0d;
 
   /* ======== Dropdowns Color For Dark =========*/
   --theme-dropdown-background: #1f2937;
@@ -232,10 +335,10 @@
   --theme-calendar-warning-background: #ffedd5;
   --theme-calendar-danger-badge: #ef4444;
   --theme-calendar-danger-background: #fee2e2;
-  --theme-calendar-info-badge: #0ea5e9;
+  --theme-calendar-info-badge: #0ba5ec;
   --theme-calendar-info-background: #e0f2fe;
   --theme-calendar-text: #374151;
-  --theme-calendar-menu-text: #9ca3af;
+  --theme-calendar-menu-text: #6b7280;
   --theme-calendar-dropdown-background: #232b39;
 
   /* ======== Pricing Table Color For Dark =========*/
@@ -260,6 +363,7 @@
 
   /* ======== Tooltip Color For Dark =========*/
   --theme-tooltip-text: #ffffff;
+  --theme-tooltip-border: #374151;
 
   /* ======== Popovers Color For Dark =========*/
   --theme-popover-title-background: #1f2937;
