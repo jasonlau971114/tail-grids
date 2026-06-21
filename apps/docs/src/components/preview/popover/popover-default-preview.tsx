@@ -1,30 +1,21 @@
 "use client";
 
-import { buttonStyles } from "@/registry/core/button";
-import {
-  Popover,
-  PopoverClose,
-  PopoverContent,
-  PopoverDescription,
-  PopoverHeading,
-  PopoverTrigger
-} from "@/registry/core/popover";
+import { Button } from "@/registry/core/button";
+import { OverlayWrapper } from "@/registry/core/overlay";
+import { Popover, PopoverArrow } from "@/registry/core/popover";
 
 export default function PopoverDefaultPreview() {
   return (
-    <Popover>
-      <PopoverTrigger className={buttonStyles({ appearance: "outline" })}>
-        Open Popover
-      </PopoverTrigger>
-
-      <PopoverContent>
-        <PopoverHeading>Popover Title</PopoverHeading>
-        <PopoverDescription>
-          This is a popover with heading and description.
-        </PopoverDescription>
-
-        <PopoverClose className="mt-4 text-sm underline">Close</PopoverClose>
-      </PopoverContent>
-    </Popover>
+    <OverlayWrapper>
+      <Button appearance="outline">Open Popover</Button>
+      <Popover className="max-w-xs">
+        <h2 className="text-base font-semibold text-title-50">Heads up!</h2>
+        <p className="mt-1 text-sm text-text-100">
+          Popovers are great for showing small bits of context without
+          navigating away from the current page.
+        </p>
+        <PopoverArrow />
+      </Popover>
+    </OverlayWrapper>
   );
 }
