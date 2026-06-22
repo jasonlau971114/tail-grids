@@ -1,20 +1,25 @@
-import { AvatarGroup } from "@/registry/core/avatar";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarGroup,
+  AvatarImage
+} from "@/registry/core/avatar";
+import { teamMembersGroup } from "./data";
 
 export default function AvatarGroupPreview() {
-  const teamMembers = [
-    {
-      src: "/docs/images/avatar/avatar-1.webp",
-      alt: "Johurul Haque"
-    },
-    {
-      src: "/docs/images/avatar/avatar-2.webp",
-      alt: "James Lue"
-    },
-    {
-      src: "/docs/images/avatar/avatar-3.webp",
-      alt: "David Lorin"
-    }
-  ];
-
-  return <AvatarGroup data={teamMembers} size="md" />;
+  return (
+    <AvatarGroup aria-label="Team members">
+      {teamMembersGroup.map((member, index) => (
+        <Avatar key={index} size="md">
+          <AvatarImage src={member.src} alt={member.alt} />
+          <AvatarFallback>
+            {member.alt
+              .split(" ")
+              .map(name => name[0])
+              .join("")}
+          </AvatarFallback>
+        </Avatar>
+      ))}
+    </AvatarGroup>
+  );
 }
