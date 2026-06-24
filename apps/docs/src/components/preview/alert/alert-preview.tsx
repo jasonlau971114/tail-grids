@@ -1,17 +1,25 @@
 "use client";
 
-import Alert from "@/registry/core/alert";
-import { CheckCircle1 } from "@tailgrids/icons";
+import {
+  Alert,
+  AlertContent,
+  AlertDescription,
+  AlertIndicator,
+  AlertTitle
+} from "@/registry/core/alert";
 
 export function AlertPreview() {
   return (
     <div className="flex flex-col gap-6 w-full">
-      <Alert
-        variant="success"
-        title="Success"
-        message="Your changes have been saved successfully."
-        icon={<CheckCircle1 />}
-      />
+      <Alert status="success">
+        <AlertIndicator />
+        <AlertContent>
+          <AlertTitle>Success</AlertTitle>
+          <AlertDescription>
+            Your changes have been saved successfully.
+          </AlertDescription>
+        </AlertContent>
+      </Alert>
     </div>
   );
 }
